@@ -28,27 +28,29 @@ prevent defects before, during, and after software development.
 
 ## Testing vs Debugging
 
-Testing: Executing the software to find defects that may trigger.
-
-Debugging: We analyze, examine the root cause of the bug and solving the bug.
+- Testing: executing the software to find defects.
+- Debugging: analyzing the root cause of the bug and fixing it.
 
 ## Prevention vs Detection
 
-Prevention: Is finding or identifying the bug before code is written.(Reviewing requirements documents, design review and static testing)
-
-Detection: Finding bugs by executing the software.
+- Prevention: identifying defects before code is written, such as
+  requirements review, design review, and static testing.
+- Detection: finding bugs by executing the software.
 
 NOTE: Prevention is always cheaper.
 
 ## The 1-10-100 Rule
 
 1. Fix at the requirement stage: costs 1 unit
-2. Fix at the Testing stage: costs 10 units
-3. Fix at production stage: Costs 100 units
+2. Fix at the testing stage: costs 10 units
+3. Fix at production stage: costs 100 units
 
-## Quation
+## Question
 
-A bank releases a mobile app update. The update has a bug that charges customers twice for transactions. It was not caught in testing. Walk me through what the cost of that bug looks like — to the bank, to the customers, and to the QA team that missed it.
+A bank releases a mobile app update. The update has a bug that charges
+customers twice for transactions. It was not caught in testing. Walk me
+through what the cost of that bug looks like — to the bank, the customers,
+and the QA team that missed it.
 
 ## Answer based on each stage
 
@@ -68,18 +70,49 @@ A bank releases a mobile app update. The update has a bug that charges customers
 
 **To the QA team:**
 
-- The failure was not in test execution
-- It was in test DESIGN — nobody asked
-  "what happens if this request is sent twice?"
-- That question should have been asked at
-  requirements stage, not after release
+- The failure was not in test execution.
+- It was in test design — nobody asked:
+  "What happens if this request is sent twice?"
+- That question should have been asked at the requirements stage, not after
+  release.
 
-## What suprised me today
+## What surprised me today
 
-Is the 1-10-100 rule, I was suprised to learn that the cost at each stage where the bug is found differs,means at the production stage the defect costs more expensive compared to the other two stages testing and requirement.
+I was surprised by the 1-10-100 rule. It shows that the cost of fixing a
+bug increases at each stage, and production is the most expensive.
 
-Also I wondering what is the purpose of QA yet we have developers and project lead who can test, but I learnt something to do with the curse of knownledge where a developer or the product lead will test the happy path to prevent anything will cause defects, based on what we know but now the QA will have negative testing breaks everything to identify or check is there in bugs.
+I also wondered about the purpose of QA, since developers and project leads
+can test too. I learned that QA brings a different mindset: developers and
+product leads often test the happy path, while QA explores failure paths to
+find defects.
 
-Dynamic: Execution of software product to find the bug, uses different testing approaches and testing technique
+Dynamic: executing the software product to find bugs using different testing
+approaches and techniques.
 
-Static: Finding bugs without running the software mostly happens before developing a product.(Requirements review, code review, design review, static analysis)
+Static: finding bugs without running the software, mostly before product
+development begins. Examples include requirements review, code review, design
+review, and static analysis.
+
+## Static vs Dynamic Testing
+
+**Dynamic:** Execute the software to find bugs.
+Uses testing techniques and approaches against running code.
+
+**Static:** Find bugs without running the software.
+Reviews happen before or during development — requirements,
+design, code review, static analysis tools.
+
+**Why static is underrated:**
+
+- No visible output — no dashboard, no pass/fail report
+- Requires thinking, not just tool execution
+- Catches the most expensive bugs earliest
+- Some code paths can never be reached by running the software
+  (dead code paths) — only code review finds these
+- Teams under deadline pressure always skip it and always
+  regret it later
+
+**Key insight:**
+The bugs static testing catches are requirement ambiguities
+and design flaws. At that stage, fixing costs almost nothing.
+The same bug in production costs 100x more.
