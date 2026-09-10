@@ -116,3 +116,9 @@ design, code review, static analysis tools.
 The bugs static testing catches are requirement ambiguities
 and design flaws. At that stage, fixing costs almost nothing.
 The same bug in production costs 100x more.
+
+## What is the difference between severity  and priority when logging defect?
+
+## Answer
+
+Severity is how much the bug impacts the software. Priority is how urgently it needs to be fixed. A cosmetic bug on the login page might be low severity but high priority because everyone sees it.
