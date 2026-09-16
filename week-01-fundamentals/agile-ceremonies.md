@@ -30,4 +30,4 @@ Steps taken for Agile ceremonies.
 ✅ All features are integrated and working together
 ✅ Group has reviewed the final product together before presentation.
 
-1. Why "done" without a DoD means nothing? A developer might say am done, but QA says I haven't tested yet or PM says I haven't approved yet, so meaning if the team haven't agrred then the product cannot proceed to the next step if it is shipping.
+1. Why "done" without a DoD means nothing? A developer might say am done, but QA says I haven't tested yet or PM says I haven't approved yet, so meaning if the team haven't agreed then the product cannot proceed to the next step if it is shipping.
