@@ -12,7 +12,7 @@ Steps taken for Agile ceremonies.
  2. Daily Standups: The team synchronize together daily and ask question like: What did I do yesterday? What am I focusing on today? and Is there anything blocking me?
  3. Sprint Review: The feature demo that was built is presented before the stakeholders. Here QA just make final touches on the demo to ensure it does not break.
  4. Sprint Retrospective:  The team  asks questions like: What went wrong? What went well? Is there anything to change in the next sprint.
- 5. Backlog Refinement: PM and the team clarify and have a look at the requirements provided for the next feature before the next sprint start. Here QA reads all the requirements to find unclear or anything unstable. This is the most stage where QA is required since bugs can be caught early, which is cheaper than bug found at production which is 100 more expensive.
+ 5. Backlog Refinement: PM and the team clarify and have a look at the requirements provided for the next feature before the next sprint start. Here QA reads all the requirements to find unclear or anything untestable. This is the most stage where QA is required since bugs can be caught early, which is cheaper than bug found at production which is 100 more expensive.
 
 ## QUESTION: Explain what is Agile ceremonies like you are explaining to a junior or non-tech person
 
